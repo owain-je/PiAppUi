@@ -18,7 +18,7 @@ namespace PiUi.Controllers
             var p = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "config");
             var builder = new ConfigurationBuilder().SetBasePath(p).AddJsonFile("appsettings.json");
             var Configuration = builder.Build();
-            var ServiceAddress = Configuration["connection"];
+            var ServiceAddress = Configuration["pi_app_service"];
 
 
             var i = this.HttpContext.Items;
