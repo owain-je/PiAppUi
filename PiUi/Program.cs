@@ -16,6 +16,7 @@ namespace PiUi
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://*:5002;")
                 .UseApplicationInsights()
                 .Build();
 
